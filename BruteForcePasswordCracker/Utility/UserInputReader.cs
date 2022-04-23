@@ -75,7 +75,15 @@ namespace BruteForcePasswordCracker.Utility
 
             if (selectedCharset == 3)
             {
-                for (int i = 33; i < 127; i++) //TODO
+                for (int i = 33; i < 48; i++)
+                {
+                    charset.Add(Convert.ToChar(i));
+                }
+                for (int i = 58; i < 97; i++)
+                {
+                    charset.Add(Convert.ToChar(i));
+                }
+                for (int i = 123; i < 127; i++)
                 {
                     charset.Add(Convert.ToChar(i));
                 }
